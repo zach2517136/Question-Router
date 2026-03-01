@@ -1,0 +1,6 @@
+{
+  "openai": "your-openai-api-key-here",
+  "anthropic": "your-anthropic-api-key-here",
+  "gemini": "your-google-gemini-api-key-here",
+  "kimi": "your-moonshot-kimi-api-key-here"
+}

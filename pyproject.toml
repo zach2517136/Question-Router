@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "question_router"
+version = "1.0.0"
+description = "Route questions to different LLM models by type to save tokens in agentic AI projects"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "question_router" }]
+keywords = ["llm", "routing", "agent", "tokens", "openai", "anthropic", "gemini", "kimi"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+anthropic = ["anthropic>=0.18"]
+gemini = ["google-generativeai>=0.8"]
+kimi = ["openai>=1.0"]
+all = ["question_router[openai]", "question_router[anthropic]", "question_router[gemini]", "question_router[kimi]"]
+
+[project.urls]
+Repository = "https://github.com/your-org/question_router"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["question_router*"]

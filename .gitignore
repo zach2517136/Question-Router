@@ -1,0 +1,17 @@
+# API keys - do not commit
+api_keys.json
+.question_router/api_keys.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Env
+.venv/
+venv/
+.env
